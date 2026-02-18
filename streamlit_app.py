@@ -2,7 +2,7 @@ import sys
 import os
 import streamlit as st
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "src")))
-from predict import predict_news
+from src.predict import predict_news
 import streamlit as st
 from src.predict import predict_news
 
@@ -67,4 +67,5 @@ if st.button("Analyze News"):
 
         st.divider()
         st.caption("Built with ML + NLP + Rule-based Fact Checking")
+
 
