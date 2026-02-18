@@ -1,7 +1,10 @@
-joblib
 streamlit
+scikit-learn
 pandas
 numpy
-scikit-learn
 nltk
+spacy
+joblib
+wikipedia
+
 
