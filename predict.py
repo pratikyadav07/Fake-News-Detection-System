@@ -1,3 +1,4 @@
+import sklearn.externals.joblib as joblib
 import joblib
 from src.preprocess import clean_text
 from src.entity_extractor import extract_entities
@@ -70,3 +71,4 @@ def predict_news(text):
     result["entities"] = entities
 
     return result
+
