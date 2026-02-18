@@ -1,8 +1,8 @@
 import joblib
-from src.preprocess import clean_text
-from src.entity_extractor import extract_entities
-from src.fact_checker import verify_facts
-from src.decision_engine import final_decision
+from .preprocess import clean_text
+from .entity_extractor import extract_entities
+from .fact_checker import verify_facts
+from .decision_engine import final_decision
 
 model = joblib.load("models/model.pkl")
 vectorizer = joblib.load("models/vectorizer.pkl")
@@ -29,3 +29,4 @@ def predict_news(text):
 
     result["entities"] = entities
     return result
+
